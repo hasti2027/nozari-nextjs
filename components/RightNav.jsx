@@ -41,7 +41,12 @@ export default function RightNav() {
       ))}
       {viewMoreClicked &&
         viewMoreLinks.map((l) => (
-          <a target="_blank" rel="noopener noreferrer" href={l.link}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={l.link}
+            key={l.title}
+          >
             {l.title}
           </a>
         ))}
