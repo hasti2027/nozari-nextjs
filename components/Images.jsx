@@ -18,36 +18,36 @@ export default function Images() {
       title:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
     },
-    {
-      id: 4,
-      imgSrc: "IMG_20200912_090436_503.jpg",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
-    },
-    {
-      id: 5,
-      imgSrc: "IMG_20200912_090436_508.jpg",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
-    },
-    {
-      id: 6,
-      imgSrc: "IMG_20200912_090436_548.jpg",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
-    },
-    {
-      id: 7,
-      imgSrc: "IMG_20200912_090436_549.jpg",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
-    },
-    {
-      id: 8,
-      imgSrc: "IMG_20200912_090436_552.jpg",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
-    },
+    // {
+    //   id: 4,
+    //   imgSrc: "IMG_20200912_090436_503.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
+    // },
+    // {
+    //   id: 5,
+    //   imgSrc: "IMG_20200912_090436_508.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
+    // },
+    // {
+    //   id: 6,
+    //   imgSrc: "IMG_20200912_090436_548.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
+    // },
+    // {
+    //   id: 7,
+    //   imgSrc: "IMG_20200912_090436_549.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
+    // },
+    // {
+    //   id: 8,
+    //   imgSrc: "IMG_20200912_090436_552.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt",
+    // },
   ];
 
   const imgSrcLength = imagesSrc.length;
