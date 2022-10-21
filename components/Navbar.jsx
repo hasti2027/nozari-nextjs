@@ -20,7 +20,7 @@ export default function Navbar() {
       <ul>
         <div className="contents">
           {contents.map((c) => (
-            <li>{c.title}</li>
+            <li key={c.id}>{c.title}</li>
           ))}
         </div>
 
