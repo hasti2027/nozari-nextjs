@@ -44,7 +44,8 @@ export default function RightNav() {
             className="view-more"
             onClick={() => setViewMoreClicked(!viewMoreClicked)}
           >
-            view {viewMoreClicked ? "less" : "more"}
+            view {viewMoreClicked ? "less" : "more"}{" "}
+            <span className="arrow">&#8642;</span>
           </button>
         </div>
       </div>
@@ -81,7 +82,7 @@ export default function RightNav() {
         .links {
           overflow: hidden;
           transition: height .5s ease-out;
-          height: ${viewMoreClicked ? "150px" : "87px"};
+          height: ${viewMoreClicked ? "155px" : "93px"};
           position: relative;
         }
 
@@ -98,7 +99,6 @@ export default function RightNav() {
         }
 
         .view-more {
-      
           cursor: pointer;
           background-color: rgba(255, 255, 255, 0.8);
           border: 1px solid lightgray;
@@ -106,6 +106,14 @@ export default function RightNav() {
           padding: .5rem;
           margin: 0;
           margin-top: 0.5rem;
+          width: 100px;
+        }
+
+       
+        .arrow {
+          display: inline-block;
+          transform: ${viewMoreClicked ? "rotate(180deg)" : "rotate(0deg)"}; 
+          transition: transform .5s ease-in;
         }
 
         .button-container {
