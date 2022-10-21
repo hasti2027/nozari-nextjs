@@ -96,6 +96,10 @@ export default function Images() {
         }
 
         @media only screen and (max-width: 700px) {
+          .images {
+            margin-top: 80px;
+          }
+
           .images p {
             margin: 0.25rem;
           }

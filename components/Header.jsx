@@ -19,11 +19,10 @@ export default function Header() {
           <Navbar />
           <Socials />
         </div>
-        {menuClicked && (
-          <div className="right-nav-header">
-            <RightNav />
-          </div>
-        )}
+
+        <div className="right-nav-header">
+          <RightNav menuClicked={menuClicked} />
+        </div>
       </div>
 
       <style jsx>{`
@@ -44,6 +43,28 @@ export default function Header() {
         }
 
         @media only screen and (max-width: 700px) {
+          .top {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            padding: 0.25rem 0.5rem;
+            margin-bottom: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+
+          .navbar-socials {
+            width: 100%;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem 0.5rem;
+            transition: transform 0.5s ease-in;
+            transform: ${menuClicked ? "translateX(0)" : "translateX(100%)"};
+          }
+
           .header {
             margin: 0 5vw;
             width: 100%;
@@ -51,6 +72,9 @@ export default function Header() {
 
           .top h1 {
             display: block;
+            margin: 0;
+            font-size: 1.4rem;
+            font-family: "Audiowide", cursive;
           }
 
           .right-nav-header {
@@ -73,7 +97,7 @@ export default function Header() {
           }
 
           .header .navbar-socials {
-            display: ${menuClicked ? "flex" : "none"};
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;

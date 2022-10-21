@@ -21,8 +21,6 @@ export default function RightNav() {
     { title: "mohsen.gallery", link: "https://mohsen.gallery/" },
   ];
 
-  const viewMoreLinks = [];
-
   return (
     <div className="right-nav">
       <p className="header">
@@ -49,17 +47,7 @@ export default function RightNav() {
           </button>
         </div>
       </div>
-      {viewMoreClicked &&
-        viewMoreLinks.map((l) => (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={l.link}
-            key={l.title}
-          >
-            {l.title}
-          </a>
-        ))}
+
       <style jsx>{`
 
         .right-nav {
@@ -126,6 +114,11 @@ export default function RightNav() {
         
 
         @media only screen and (max-width: 700px) {
+  
+         .right-nav {
+            width: 100%;
+        }
+
           .right-nav .header {
             margin: 0 0 1rem 0;
           }
